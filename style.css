@@ -1,0 +1,121 @@
+/*font imports*/
+@import url("https://fonts.googleapis.com/css2?family=Nova+Cut&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+:root {
+  --pastel-orange: #ffb347;
+  --soft-orange: #f5ca7b;
+  --white: #fff;
+  --blue-violet: #8a2be2;
+  --blue-color: #452aca;
+}
+
+/*Styling body*/
+* ::after,
+::before {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(300deg, var(--pastel-orange), var(--soft-orange));
+  font-family: "Open Sans", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*Box Wrapper*/
+.wrapper {
+  max-width: 25rem;
+  padding: 3rem;
+  position: relative;
+  top: 10rem;
+  margin: auto;
+  border-radius: 10px;
+  background-color: var(--white);
+}
+
+.wrapper h1 {
+  font-family: "Nova Cut", cursive;
+  font-size: 25px;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 1.5rem;
+  color: var(--blue-color);
+}
+
+@media only screen and (max-width: 375px) {
+  .wrapper h1 {
+    font-size: 20px;
+  }
+}
+
+.wrapper .input {
+  position: relative;
+}
+
+.wrapper .input input {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  position: relative;
+  width: 100%;
+  min-width: 100px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: auto auto;
+  padding: 8px;
+  outline: none;
+  border-radius: 5px;
+  border: 2px solid var(--pastel-orange);
+}
+
+.wrapper .input input::-webkit-input-placeholder {
+  font-size: 16px;
+}
+
+.wrapper .input input:-ms-input-placeholder {
+  font-size: 16px;
+}
+
+.wrapper .input input::-ms-input-placeholder {
+  font-size: 16px;
+}
+
+.wrapper .input input::placeholder {
+  font-size: 16px;
+}
+
+.wrapper .buttons {
+  margin: 1rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .buttons #button {
+  color: var(--white);
+  font-size: 20px;
+  background-color: var(--blue-violet);
+  border: none;
+  border: 1px solid var(--blue-violet);
+  width: 100px;
+  margin: auto 1rem;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: background-color, color 0.3s ease-out;
+  transition: background-color, color 0.3s ease-out;
+}
+
+.wrapper .buttons #button:hover {
+  background-color: var(--white);
+  color: var(--blue-violet);
+}
+/*# sourceMappingURL=style.css.map */
